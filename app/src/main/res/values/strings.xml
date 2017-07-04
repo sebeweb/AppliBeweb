@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Apprenants</string>
+    <string name="titre_list_apprenant">Liste des Apprenant</string>
+
+    <string name="detailApp__nom">quelqun</string>
+    <string name="detailApp_prenom">autre</string>
+    <string name="detailApp_age">20</string>
+    <string name="detailApp_email">quelqun@utre.fr</string>
+    <string name="detailApp_tel">9874563210</string>
+    <string name="detailApp_linkedin">quelqun.linkedin</string>
+    <string name="detailApp_twitter">quelqun.twitter</string>
+    <string name="detailApp_facebook">quelqun.facebook</string>
+    <string name="detailApp_portfolio">quelqun.portfolio</string>
+    <string name="detailApp_github">quelqun.github</string>
+    <string name="detailApp_titre_skill">Skill</string>
+    <string name="detailApp_titre_projet">Projets</string>
+    <string name="detailApp_titre_formations">Formations</string>
+    <string name="detailApp_titre_info_perso">Info Perso</string>
+</resources>
