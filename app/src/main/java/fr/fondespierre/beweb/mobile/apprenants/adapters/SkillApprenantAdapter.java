@@ -50,9 +50,11 @@ public class SkillApprenantAdapter extends ArrayAdapter {
         convertView = inflater.inflate(resource, null);
 
         TextView skillNom = convertView.findViewById(R.id.skill_item_nom);
+        TextView skillLevel = convertView.findViewById(R.id.skill_item_niv);
 
         try {
-            skillNom.setText(skills.getJSONObject(position).getString("nom"));
+            skillNom.setText(skills.getJSONObject(position).getString("name"));
+            skillLevel.setText(skills.getJSONObject(position).getString("level"));
         } catch (JSONException e) {
             e.printStackTrace();
         }

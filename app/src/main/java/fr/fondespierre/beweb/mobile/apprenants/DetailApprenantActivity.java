@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -28,16 +30,12 @@ public class DetailApprenantActivity extends AppCompatActivity {
         ListView listeSkill = (ListView)findViewById(R.id.detailApp_liste_skill);
         ListView listeProjet = (ListView)findViewById(R.id.detailApp_liste_projets);
 
-       int id = getIntent().getExtras().getInt("id");
+//       int id = getIntent().getExtras().getInt("id");
 
         JSONObject data = null;
         try {
-            data = Datas.getApprenant(id);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+            data = Datas.apprenant;
 
-        try {
             TextView textNom = (TextView)findViewById(R.id.detailApp_nom);
             TextView textPrenom = (TextView)findViewById(R.id.detailApp_prenom);
             TextView textAge = (TextView)findViewById(R.id.detailApp_age);
@@ -55,6 +53,8 @@ public class DetailApprenantActivity extends AppCompatActivity {
 
             projetAdapter = new ProjetApprenantAdapter(this, 0, data);
             listeProjet.setAdapter(projetAdapter);
+            LinearLayout projet = (LinearLayout) findViewById(R.id.projet_item);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }

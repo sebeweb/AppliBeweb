@@ -12,6 +12,8 @@ import fr.fondespierre.beweb.mobile.apprenants.dal.enumerations.Status;
 
 public class Datas {
 
+    public static JSONObject apprenant;
+
     public static JSONArray getApprenants() throws JSONException {
         JSONArray apprenants = new JSONArray();
         JSONObject seb = new JSONObject();

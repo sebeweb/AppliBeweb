@@ -48,7 +48,7 @@ public class ProjetApprenantAdapter extends ArrayAdapter {
         TextView projetNom = convertView.findViewById(R.id.projet_item_nom);
 
         try {
-            projetNom.setText(projets.getJSONObject(position).getString("nom"));
+            projetNom.setText(projets.getJSONObject(position).getString("titre"));
         } catch (JSONException e) {
             e.printStackTrace();
         }
